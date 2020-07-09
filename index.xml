@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Even - A super concise theme for Hugo</title>
+    <link>https://showfom.github.io/</link>
+    <description>Recent content on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://showfom.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test</title>
+      <link>https://showfom.github.io/test/</link>
+      <pubDate>Thu, 09 Jul 2020 15:57:59 +0800</pubDate>
+      
+      <guid>https://showfom.github.io/test/</guid>
+      <description>第二个 刚才的第一篇不知道为什么显示不出来</description>
+    </item>
+    
+    <item>
+      <title>The First One</title>
+      <link>https://showfom.github.io/post/</link>
+      <pubDate>Thu, 09 Jul 2020 15:46:08 +0800</pubDate>
+      
+      <guid>https://showfom.github.io/post/</guid>
+      <description>第一篇 试试水，研究一下到底怎么弄的 这个cmder还挺好用的</description>
+    </item>
+    
+  </channel>
+</rss>

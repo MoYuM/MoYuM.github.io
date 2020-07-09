@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://showfom.github.io/sitemap.xml
