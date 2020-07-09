@@ -17,21 +17,14 @@
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2020-07-09T17:05:21+08:00</lastmod>
+    <lastmod>2020-07-09T17:02:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2020-07-09T17:05:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/test/</loc>
-    <lastmod>2020-07-09T17:05:21+08:00</lastmod>
+    <lastmod>2020-07-09T17:02:19+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
