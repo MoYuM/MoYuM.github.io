@@ -6,10 +6,19 @@
     <description>Recent content on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Jul 2020 17:30:44 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 17:33:04 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Express简介</title>
+      <link>http://localhost:1313/post/express%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Thu, 09 Jul 2020 17:33:04 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/express%E7%AE%80%E4%BB%8B/</guid>
+      <description>安装 1 npm install express -S 基本使用 新建一个app.js，内容如下。之后可以用node运行这个文件，就可以建立一个本地服务器。 1 2 3 4 5 6 7 8 9 10 11 12 const express</description>
+    </item>
     
     <item>
       <title>数据库简介</title>
