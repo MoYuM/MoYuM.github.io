@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>数据库简介 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="MoYuM" /><meta name="description" content="数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成： 数据库文件集合：主要是一系列" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.73.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.8c3cbcb0324c2bb4875ceccba4007cbad4b4ac8377f33af9953c3e7684534a50.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="数据库简介" />
+<meta property="og:description" content="数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成： 数据库文件集合：主要是一系列" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/" />
+<meta property="article:published_time" content="2020-07-09T17:21:26+08:00" />
+<meta property="article:modified_time" content="2020-07-09T17:21:26+08:00" />
+<meta itemprop="name" content="数据库简介">
+<meta itemprop="description" content="数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成： 数据库文件集合：主要是一系列">
+<meta itemprop="datePublished" content="2020-07-09T17:21:26&#43;08:00" />
+<meta itemprop="dateModified" content="2020-07-09T17:21:26&#43;08:00" />
+<meta itemprop="wordCount" content="1606">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="数据库简介"/>
+<meta name="twitter:description" content="数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成： 数据库文件集合：主要是一系列"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Even</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Even</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+  <div class="post-content">
+    <p>数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成：</p>
+<ol>
+<li>数据库文件集合：主要是一系列的数据文件，作用是存储数据</li>
+<li>数据库服务端：主要负责对数据文件以及文件中的数据进行管理</li>
+<li>数据库客户端：主要负责和服务端通信，向服务端传输数据或者从服务端获取数据</li>
+</ol>
+<p>他们之间的关系：</p>
+<ol>
+<li>数据库客户端通过 SQL 语句告诉服务端，客户端想要做什么</li>
+<li>服务端和数据文件一般都在同一台机器上，直接可以读写数据文件</li>
+</ol>
+<p>一般情况下，数据库分为关<strong>系型数据库</strong>和<strong>非关系型数据库</strong></p>
+<p>数据库排行榜: <a href="https://db-engines.com/en/ranking">https://db-engines.com/en/ranking</a></p>
+<p><a href="https://www.notion.so/MySQL-faa54e99722b40b19321bdf23c07af5b">MySQL常用命令</a></p>
+<h1 id="关系型数据库中核心元素">关系型数据库中核心元素</h1>
+<ul>
+<li>数据行（记录）</li>
+<li>数据列（字段）</li>
+<li>数据表（数据行的集合）</li>
+<li>数据库（数据表的集合）</li>
+</ul>
+<h1 id="sql">SQL</h1>
+<p>SQL 语句的作用是实现数据库客户端和服务端之间的通信，不区分大小写</p>
+<h1 id="安装mysql">安装MySQL</h1>
+<h2 id="解压">解压</h2>
+<p>下载解压到自定义目录，例如解压目录为 E:\MYSQL\mysql-5.6.41-winx64</p>
+<p>配置文件my-default.ini文件名修改为： <code>my.ini</code></p>
+<p>复制下面内容，覆盖到<code>my.ini</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="p">[</span><span class="n">mysql</span><span class="p">]</span>
+<span class="o">#</span> <span class="err">设置</span><span class="n">mysql客户端默认字符集</span>
+<span class="k">default</span><span class="o">-</span><span class="nb">character</span><span class="o">-</span><span class="k">set</span><span class="o">=</span><span class="n">utf8</span> 
+<span class="p">[</span><span class="n">mysqld</span><span class="p">]</span>
+<span class="o">#</span><span class="err">设置</span><span class="mi">3306</span><span class="err">端口</span>
+<span class="n">port</span> <span class="o">=</span> <span class="mi">3306</span> 
+<span class="o">#</span> <span class="err">设置</span><span class="n">mysql的安装目录</span>
+<span class="n">basedir</span><span class="o">=</span><span class="n">E</span><span class="p">:</span><span class="err">\\</span><span class="n">MYSQL</span><span class="err">\\</span><span class="n">mysql</span><span class="o">-</span><span class="mi">5</span><span class="p">.</span><span class="mi">6</span><span class="p">.</span><span class="mi">41</span><span class="o">-</span><span class="n">winx64</span> 
+<span class="o">#</span> <span class="err">设置</span><span class="n">mysql数据库的数据的存放目录</span>
+<span class="n">datadir</span><span class="o">=</span><span class="n">E</span><span class="p">:</span><span class="err">\\</span><span class="n">MYSQL</span><span class="err">\\</span><span class="n">mysql</span><span class="o">-</span><span class="mi">5</span><span class="p">.</span><span class="mi">6</span><span class="p">.</span><span class="mi">41</span><span class="o">-</span><span class="n">winx64</span><span class="err">\\</span><span class="k">data</span>
+<span class="o">#</span> <span class="err">允许最大连接数</span>
+<span class="n">max_connections</span><span class="o">=</span><span class="mi">200</span>
+<span class="o">#</span> <span class="err">服务端使用的字符集默认为</span><span class="n">UTF8</span>
+<span class="nb">character</span><span class="o">-</span><span class="k">set</span><span class="o">-</span><span class="n">server</span><span class="o">=</span><span class="n">utf8</span>
+<span class="o">#</span> <span class="err">创建新表时将使用的默认存储引擎</span>
+<span class="k">default</span><span class="o">-</span><span class="k">storage</span><span class="o">-</span><span class="n">engine</span><span class="o">=</span><span class="n">INNODB</span>
+
+<span class="n">sql_mode</span><span class="o">=</span><span class="n">NO_ENGINE_SUBSTITUTION</span><span class="p">,</span><span class="n">STRICT_TRANS_TABLES</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="安装">安装</h2>
+<p><strong>以管理员身份</strong>启动cmd黑窗口，进入到mysql的下的bin目录下，执行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="nx">mysqld</span> <span class="o">--</span><span class="nx">install</span> <span class="nx">mysql</span> <span class="o">--</span><span class="nx">defaults</span><span class="o">-</span><span class="nx">file</span><span class="o">=</span><span class="s2">&#34;D:\\MYSQL\\mysql-5.6.41-winx64\\my.ini&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>注意路径</strong></p>
+<p>提示<code>Service successfully installed</code>即安装成功</p>
+<h2 id="使用">使用</h2>
+<p>启动、停止、卸载mysql服务的命令</p>
+<ol>
+<li>启动：net start mysql</li>
+<li>停止：net stop mysql</li>
+<li>卸载：mysqld -remove</li>
+</ol>
+<h2 id="配置环境变量">配置环境变量</h2>
+<p>为方便以后通过 mysql -uroot -p 就可以链接mysql服务，使用数据库命令对数据库进行操作。</p>
+<p>在path中加入MySQL的bin文件夹的目录</p>
+<h1 id="数据类型和约束">数据类型和约束</h1>
+<p><strong>常见数据类型如下：</strong></p>
+<ul>
+<li>整数：int, bit</li>
+<li>小数：decimal</li>
+<li>字符串：varchar, char</li>
+<li>日期时间：date, time, datetime</li>
+<li>枚举类型：enum</li>
+</ul>
+<p><strong>特别说明的类型如下：</strong></p>
+<ul>
+<li>decimal表示浮点数，如 <code>decimal(5,2)</code> 表示共存5位数，小数占 2 位</li>
+<li>char 表示固定长度的字符串，如 <code>char(3)</code> ，填充 &lsquo;ab&rsquo; 时就会补一个空格，储存 <code>'ab '</code></li>
+<li>varchar 表示可变长度的字符串，如 <code>varchar(3)</code> ，填充 &lsquo;ab&rsquo; 时就会储存 &lsquo;ab&rsquo;</li>
+<li>对于图片、音频、视频等文件，不储存在数据库中，而是上传到某个服务器上，然后再表中储存这个文件的保存路径</li>
+<li>字符串 text 表示储存大文本，当字符大于4000时推荐使用，比如技术文档</li>
+</ul>
+<p><strong>数据约束：</strong></p>
+<p>约束本质上是对数据在数据类型限定的基础上添加的额外的要求</p>
+<p>创建的约束如下：</p>
+<ol>
+<li>主键 primary key ：物理上储存的顺序。MySQL 建议所有表的主键字段都叫 <code>id</code> ，类型为 <code>int unsigned</code></li>
+<li>非空 <code>not null</code> ：此字段不允许填写空值</li>
+<li>唯一 <code>unique</code> ：此字段的值不允许重复</li>
+<li>默认 <code>default</code> ：当不填写字段时，使用默认值；如果填写了，就以填写值为准</li>
+<li>外键 <code>foreign key</code> : 对关系字段进行约束，当为关系字段填写值时，会到关联的表中查询此值是否存在，如果存在则填写成功，如果不存在则填写失败并抛出异常</li>
+</ol>
+<h1 id="在后台服务器程序获取数据库数据">在后台服务器程序获取数据库数据</h1>
+<p>安装MySQL</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="nx">yarn</span> <span class="nx">add</span> <span class="nx">mysql</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>项目目录下新建db文件夹，新建一个db.js，其中代码如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">var</span> <span class="nx">mysql</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;mysql&#34;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">pool</span> <span class="o">=</span> <span class="nx">mysql</span><span class="p">.</span><span class="nx">createPool</span><span class="p">({</span>
+    <span class="nx">host</span><span class="o">:</span><span class="s2">&#34;localhost&#34;</span><span class="p">,</span>
+    <span class="nx">user</span><span class="o">:</span><span class="s2">&#34;root&#34;</span><span class="p">,</span>
+    <span class="nx">password</span><span class="o">:</span><span class="s2">&#34;&#34;</span><span class="p">,</span>
+    <span class="nx">database</span><span class="o">:</span><span class="s2">&#34;easystu&#34;</span>
+<span class="p">})</span><span class="c1">//数据库连接配置
+</span><span class="c1"></span>
+<span class="kd">function</span> <span class="nx">query</span><span class="p">(</span><span class="nx">sql</span><span class="p">,</span><span class="nx">callback</span><span class="p">){</span>
+    <span class="nx">pool</span><span class="p">.</span><span class="nx">getConnection</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">connection</span><span class="p">){</span>
+        <span class="nx">connection</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="nx">sql</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">rows</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">callback</span><span class="p">(</span><span class="nx">err</span><span class="p">,</span><span class="nx">rows</span><span class="p">)</span>
+            <span class="nx">connection</span><span class="p">.</span><span class="nx">release</span><span class="p">()</span>
+        <span class="p">})</span>
+    <span class="p">})</span>
+<span class="p">}</span><span class="c1">//对数据库进行增删改查操作的基础
+</span><span class="c1"></span>
+<span class="nx">exports</span><span class="p">.</span><span class="nx">query</span> <span class="o">=</span> <span class="nx">query</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>在项目中需要引入这个db.js之后，才能对数据库进行查询</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;express&#39;</span><span class="p">);</span>
+<span class="kr">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+
+<span class="c1">// 1、引入数据库
+</span><span class="c1"></span><span class="kr">const</span> <span class="nx">db</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./db/db.js&#39;</span><span class="p">);</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// console.log(db.query);
+</span><span class="c1"></span>    
+    <span class="c1">// 2、进行数据库查询
+</span><span class="c1"></span>    <span class="nx">db</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="s2">&#34;select * from students&#34;</span><span class="p">,(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">data</span><span class="p">)=&gt;{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;查完了&#34;</span><span class="p">);</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="mi">3000</span><span class="p">,</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Example app listening on port 3000!&#39;</span><span class="p">)</span>
+<span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="使用asyncawait封装数据库操作">使用async+await封装数据库操作</h1>
+<p><code>db.query</code> 是异步方法，应该用async+await封装一下</p>
+<p>在db目录下新建handleDb.js文件</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">const</span> <span class="nx">db</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./db.js&#39;</span><span class="p">);</span>
+
+<span class="nx">async</span> <span class="kd">function</span> <span class="nx">handleDb</span><span class="p">(</span><span class="nx">res</span><span class="p">,</span><span class="nx">sql</span><span class="p">,</span><span class="nx">errmsg</span><span class="p">){</span>
+    <span class="k">try</span><span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">ret</span> <span class="o">=</span> <span class="nx">await</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)=&gt;{</span>
+            <span class="nx">db</span><span class="p">.</span><span class="nx">query</span><span class="p">(</span><span class="nx">sql</span><span class="p">,(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">data</span><span class="p">)=&gt;{</span>
+                <span class="k">if</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="nx">reject</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+                <span class="p">}</span>
+                <span class="nx">resolve</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>
+            <span class="p">});</span>
+        <span class="p">})</span>
+    <span class="p">}</span>
+    <span class="k">catch</span><span class="p">(</span><span class="nx">err</span><span class="p">){</span>
+        <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">({</span><span class="nx">errmsg</span><span class="o">:</span><span class="nx">errmsg</span><span class="p">})</span>
+        <span class="k">return</span>
+    <span class="p">}</span>
+    
+    <span class="k">return</span> <span class="nx">ret</span>
+<span class="p">}</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">handleDb</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>app.js中</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kr">const</span> <span class="nx">handleDb</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;./db/handleDb&#39;</span><span class="p">);</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">,</span> <span class="nx">async</span><span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+        <span class="kd">let</span> <span class="nx">ret</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">handleDb</span><span class="p">(</span><span class="nx">res</span><span class="p">,</span> <span class="s2">&#34;select * from students where id&lt;6;&#34;</span><span class="p">,</span> <span class="s2">&#34;数据库查询出错&#34;</span><span class="p">)</span>
+        <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">ret</span><span class="p">)</span>
+<span class="p">});</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+  </div>
+</article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">MoYuM</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
