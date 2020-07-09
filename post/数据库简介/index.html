@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.73.0 with theme even" />
 
 
-<link rel="canonical" href="http://localhost:1313/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/" />
+<link rel="canonical" href="http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -42,13 +42,13 @@
 <meta property="og:title" content="数据库简介" />
 <meta property="og:description" content="数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成： 数据库文件集合：主要是一系列" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/" />
-<meta property="article:published_time" content="2020-07-09T17:21:26+08:00" />
-<meta property="article:modified_time" content="2020-07-09T17:21:26+08:00" />
+<meta property="og:url" content="http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/" />
+<meta property="article:published_time" content="2020-07-09T17:30:44+08:00" />
+<meta property="article:modified_time" content="2020-07-09T17:30:44+08:00" />
 <meta itemprop="name" content="数据库简介">
 <meta itemprop="description" content="数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成： 数据库文件集合：主要是一系列">
-<meta itemprop="datePublished" content="2020-07-09T17:21:26&#43;08:00" />
-<meta itemprop="dateModified" content="2020-07-09T17:21:26&#43;08:00" />
+<meta itemprop="datePublished" content="2020-07-09T17:30:44&#43;08:00" />
+<meta itemprop="dateModified" content="2020-07-09T17:30:44&#43;08:00" />
 <meta itemprop="wordCount" content="1606">
 
 
@@ -116,8 +116,32 @@
       <div class="content-wrapper">
         <div id="content" class="content">
           <article class="post">
-  <div class="post-content">
-    <p>数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成：</p>
+    
+    <header class="post-header">
+      <h1 class="post-title">数据库简介</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-07-09 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#解压">解压</a></li>
+    <li><a href="#安装">安装</a></li>
+    <li><a href="#使用">使用</a></li>
+    <li><a href="#配置环境变量">配置环境变量</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成：</p>
 <ol>
 <li>数据库文件集合：主要是一系列的数据文件，作用是存储数据</li>
 <li>数据库服务端：主要负责对数据文件以及文件中的数据进行管理</li>
@@ -167,24 +191,24 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sql" data-lang="sql"><span class="p">[</span><span class="n">mysql</span><span class="p">]</span>
-<span class="o">#</span> <span class="err">设置</span><span class="n">mysql客户端默认字符集</span>
-<span class="k">default</span><span class="o">-</span><span class="nb">character</span><span class="o">-</span><span class="k">set</span><span class="o">=</span><span class="n">utf8</span> 
-<span class="p">[</span><span class="n">mysqld</span><span class="p">]</span>
-<span class="o">#</span><span class="err">设置</span><span class="mi">3306</span><span class="err">端口</span>
-<span class="n">port</span> <span class="o">=</span> <span class="mi">3306</span> 
-<span class="o">#</span> <span class="err">设置</span><span class="n">mysql的安装目录</span>
-<span class="n">basedir</span><span class="o">=</span><span class="n">E</span><span class="p">:</span><span class="err">\\</span><span class="n">MYSQL</span><span class="err">\\</span><span class="n">mysql</span><span class="o">-</span><span class="mi">5</span><span class="p">.</span><span class="mi">6</span><span class="p">.</span><span class="mi">41</span><span class="o">-</span><span class="n">winx64</span> 
-<span class="o">#</span> <span class="err">设置</span><span class="n">mysql数据库的数据的存放目录</span>
-<span class="n">datadir</span><span class="o">=</span><span class="n">E</span><span class="p">:</span><span class="err">\\</span><span class="n">MYSQL</span><span class="err">\\</span><span class="n">mysql</span><span class="o">-</span><span class="mi">5</span><span class="p">.</span><span class="mi">6</span><span class="p">.</span><span class="mi">41</span><span class="o">-</span><span class="n">winx64</span><span class="err">\\</span><span class="k">data</span>
-<span class="o">#</span> <span class="err">允许最大连接数</span>
-<span class="n">max_connections</span><span class="o">=</span><span class="mi">200</span>
-<span class="o">#</span> <span class="err">服务端使用的字符集默认为</span><span class="n">UTF8</span>
-<span class="nb">character</span><span class="o">-</span><span class="k">set</span><span class="o">-</span><span class="n">server</span><span class="o">=</span><span class="n">utf8</span>
-<span class="o">#</span> <span class="err">创建新表时将使用的默认存储引擎</span>
-<span class="k">default</span><span class="o">-</span><span class="k">storage</span><span class="o">-</span><span class="n">engine</span><span class="o">=</span><span class="n">INNODB</span>
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="p">[</span><span class="nx">mysql</span><span class="p">]</span>
+<span class="err">#</span> <span class="nx">设置mysql客户端默认字符集</span>
+<span class="k">default</span><span class="o">-</span><span class="nx">character</span><span class="o">-</span><span class="nx">set</span><span class="o">=</span><span class="nx">utf8</span> 
+<span class="p">[</span><span class="nx">mysqld</span><span class="p">]</span>
+<span class="err">#</span><span class="nx">设置3306端口</span>
+<span class="nx">port</span> <span class="o">=</span> <span class="mi">3306</span> 
+<span class="err">#</span> <span class="nx">设置mysql的安装目录</span>
+<span class="nx">basedir</span><span class="o">=</span><span class="nx">E</span><span class="o">:</span><span class="err">\\</span><span class="nx">MYSQL</span><span class="err">\\</span><span class="nx">mysql</span><span class="o">-</span><span class="mf">5.6.41</span><span class="o">-</span><span class="nx">winx64</span> 
+<span class="err">#</span> <span class="nx">设置mysql数据库的数据的存放目录</span>
+<span class="nx">datadir</span><span class="o">=</span><span class="nx">E</span><span class="o">:</span><span class="err">\\</span><span class="nx">MYSQL</span><span class="err">\\</span><span class="nx">mysql</span><span class="o">-</span><span class="mf">5.6.41</span><span class="o">-</span><span class="nx">winx64</span><span class="err">\\</span><span class="nx">data</span>
+<span class="err">#</span> <span class="nx">允许最大连接数</span>
+<span class="nx">max_connections</span><span class="o">=</span><span class="mi">200</span>
+<span class="err">#</span> <span class="nx">服务端使用的字符集默认为UTF8</span>
+<span class="nx">character</span><span class="o">-</span><span class="nx">set</span><span class="o">-</span><span class="nx">server</span><span class="o">=</span><span class="nx">utf8</span>
+<span class="err">#</span> <span class="nx">创建新表时将使用的默认存储引擎</span>
+<span class="k">default</span><span class="o">-</span><span class="nx">storage</span><span class="o">-</span><span class="nx">engine</span><span class="o">=</span><span class="nx">INNODB</span>
 
-<span class="n">sql_mode</span><span class="o">=</span><span class="n">NO_ENGINE_SUBSTITUTION</span><span class="p">,</span><span class="n">STRICT_TRANS_TABLES</span>
+<span class="nx">sql_mode</span><span class="o">=</span><span class="nx">NO_ENGINE_SUBSTITUTION</span><span class="p">,</span><span class="nx">STRICT_TRANS_TABLES</span>
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="安装">安装</h2>
@@ -413,8 +437,35 @@
 </code></pre></td></tr></table>
 </div>
 </div>
-  </div>
-</article>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">MoYuM</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-07-09
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89gameover/">
+            <span class="next-text nav-default">如果没有GameOver</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
         </div>
         
 

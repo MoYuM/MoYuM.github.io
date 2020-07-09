@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Jul 2020 17:02:19 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 17:30:44 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>数据库简介</title>
+      <link>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/</link>
+      <pubDate>Thu, 09 Jul 2020 17:30:44 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/</guid>
+      <description>数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成： 数据库文件集合：主要是一系列</description>
+    </item>
     
     <item>
       <title>如果没有GameOver</title>
