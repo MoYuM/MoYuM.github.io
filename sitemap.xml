@@ -1,34 +1,20 @@
-<?xml-stylesheet type="text/xsl" href="https://showfom.github.io/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://showfom.github.io/test/</loc>
-    <lastmod>2020-07-09T15:57:59+08:00</lastmod>
+    <loc>http://localhost:1313/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://showfom.github.io/post/</loc>
-    <lastmod>2020-07-09T15:46:08+08:00</lastmod>
+    <loc>http://localhost:1313/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://showfom.github.io/categories/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://showfom.github.io/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://showfom.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
