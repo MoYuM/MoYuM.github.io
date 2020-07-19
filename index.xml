@@ -6,36 +6,38 @@
     <description>Recent content on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Jul 2020 17:33:04 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2020 17:06:18 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Express简介</title>
-      <link>http://localhost:1313/post/express%E7%AE%80%E4%BB%8B/</link>
-      <pubDate>Thu, 09 Jul 2020 17:33:04 +0800</pubDate>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/express%E7%AE%80%E4%BB%8B/</guid>
-      <description>安装 1 npm install express -S 基本使用 新建一个app.js，内容如下。之后可以用node运行这个文件，就可以建立一个本地服务器。 1 2 3 4 5 6 7 8 9 10 11 12 const express</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>Hugo is a static site engine written in Go.
+It makes use of a variety of open source projects including:
+ Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
     </item>
     
     <item>
-      <title>数据库简介</title>
-      <link>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/</link>
-      <pubDate>Thu, 09 Jul 2020 17:30:44 +0800</pubDate>
+      <title>基础响应式原理</title>
+      <link>http://localhost:1313/post/vue-basic-reactivity/</link>
+      <pubDate>Sun, 19 Jul 2020 17:06:18 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%AE%80%E4%BB%8B/</guid>
-      <description>数据库管理系统（Database Management System,简称DBMS）是为管理数据库而设计的软件系统，包括三大部分构成： 数据库文件集合：主要是一系列</description>
+      <guid>http://localhost:1313/post/vue-basic-reactivity/</guid>
+      <description>响应式基础原理 此文参照了Vue官网的教程，但由于官网教程为英文，所以我在这里以文字形式简单的复述一遍，英语好的话，推荐直接看官网教程（链接在</description>
     </item>
     
     <item>
-      <title>如果没有GameOver</title>
-      <link>http://localhost:1313/post/%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89gameover/</link>
-      <pubDate>Thu, 09 Jul 2020 17:02:19 +0800</pubDate>
+      <title>如果没有GAMEOVER</title>
+      <link>http://localhost:1313/post/if-no-gameover/</link>
+      <pubDate>Sun, 19 Jul 2020 17:01:03 +0800</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%A6%82%E6%9E%9C%E6%B2%A1%E6%9C%89gameover/</guid>
-      <description>读《何为良好生活》有感：如果没有GAME OVER | 机核 GCORES 在家重读陈嘉映老师的《何为良好生活》，虽然是本讲伦理学的书，但却让我有了一些新的视角来看待</description>
+      <guid>http://localhost:1313/post/if-no-gameover/</guid>
+      <description>读《何为良好生活》有感：如果没有GAME OVER 在家重读陈嘉映老师的《何为良好生活》，虽然是本讲伦理学的书，但却让我有了一些新的视角来看待我对于游</description>
     </item>
     
   </channel>

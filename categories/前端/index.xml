@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Even - A super concise theme for Hugo</title>
-    <link>http://localhost:1313/post/</link>
-    <description>Recent content in Posts on Even - A super concise theme for Hugo</description>
+    <title>前端 on Even - A super concise theme for Hugo</title>
+    <link>http://localhost:1313/categories/%E5%89%8D%E7%AB%AF/</link>
+    <description>Recent content in 前端 on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 19 Jul 2020 17:06:18 +0800</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/categories/%E5%89%8D%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>http://localhost:1313/post/vue-basic-reactivity/</guid>
       <description>响应式基础原理 此文参照了Vue官网的教程，但由于官网教程为英文，所以我在这里以文字形式简单的复述一遍，英语好的话，推荐直接看官网教程（链接在</description>
-    </item>
-    
-    <item>
-      <title>如果没有GAMEOVER</title>
-      <link>http://localhost:1313/post/if-no-gameover/</link>
-      <pubDate>Sun, 19 Jul 2020 17:01:03 +0800</pubDate>
-      
-      <guid>http://localhost:1313/post/if-no-gameover/</guid>
-      <description>读《何为良好生活》有感：如果没有GAME OVER 在家重读陈嘉映老师的《何为良好生活》，虽然是本讲伦理学的书，但却让我有了一些新的视角来看待我对于游</description>
     </item>
     
   </channel>
