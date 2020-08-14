@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>JS面试题 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="MoYuM" /><meta name="description" content="JavaScript 1. 什么是“use strict” ，好处和坏处 “use strict”：严格模式，是一种在 JavaScript 代码运行时自动实行更严格解析和错误处理的方法 优点： 消" /><meta name="keywords" content="Hugo, theme, MoYuM, game" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.73.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/js%E9%9D%A2%E8%AF%95%E9%A2%98/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.8c3cbcb0324c2bb4875ceccba4007cbad4b4ac8377f33af9953c3e7684534a50.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="JS面试题" />
+<meta property="og:description" content="JavaScript 1. 什么是“use strict” ，好处和坏处 “use strict”：严格模式，是一种在 JavaScript 代码运行时自动实行更严格解析和错误处理的方法 优点： 消" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/js%E9%9D%A2%E8%AF%95%E9%A2%98/" />
+<meta property="article:published_time" content="2020-08-14T17:11:01+08:00" />
+<meta property="article:modified_time" content="2020-08-14T17:11:01+08:00" />
+<meta itemprop="name" content="JS面试题">
+<meta itemprop="description" content="JavaScript 1. 什么是“use strict” ，好处和坏处 “use strict”：严格模式，是一种在 JavaScript 代码运行时自动实行更严格解析和错误处理的方法 优点： 消">
+<meta itemprop="datePublished" content="2020-08-14T17:11:01&#43;08:00" />
+<meta itemprop="dateModified" content="2020-08-14T17:11:01&#43;08:00" />
+<meta itemprop="wordCount" content="5754">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="JS面试题"/>
+<meta name="twitter:description" content="JavaScript 1. 什么是“use strict” ，好处和坏处 “use strict”：严格模式，是一种在 JavaScript 代码运行时自动实行更严格解析和错误处理的方法 优点： 消"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">MoYuM</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">MoYuM</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">JS面试题</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2020-08-14 </span>
+        <div class="post-category">
+            <a href="/categories/%E5%89%8D%E7%AB%AF/"> 前端 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents"></nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="javascript">JavaScript</h1>
+<h1 id="1-什么是use-strict-好处和坏处">1. 什么是“use strict” ，好处和坏处</h1>
+<p>“use strict”：严格模式，是一种在 JavaScript 代码运行时自动实行更严格解析和错误处理的方法</p>
+<p>优点：</p>
+<ol>
+<li>消除 Javascript 语法的一些不合理、不严谨之处，减少一些怪异行为；</li>
+<li>消除代码运行时的一些不安全之处，保证代码运行时的安全</li>
+<li>提高编译器效率，增加运行速度</li>
+<li>为未来新版本的 Javascript 做好铺垫</li>
+</ol>
+<p>缺点：</p>
+<p>现在的网站的 JS 都会进行压缩，一些文件用了严格模式，而另一些没有。这时这些本来是严格模式的文件，被 merge 后，这个串就到了文件的中间，不仅没有指示严格模式，反而在压缩后浪费了字节</p>
+<h1 id="2-consolelog0102">2. console.log(0.1+0.2)</h1>
+<p>01+0.2结果不是0.3，而是0.3000000000000000004，JS 中两个数组相加时是以二进制形式进行的，当十进制小数的二进制表示的有限数字超过52位时，在 JS 里是不能精确存储的，这个时候就存在舍入误差</p>
+<h1 id="3-js-数据类型">3. JS 数据类型</h1>
+<p>ES5中有：Number、String、Boolean、undefined、Object、Null</p>
+<p>ES6 新增了第七种数据类型 Symbol，表示独一无二的值</p>
+<h1 id="4-简述-javascript-原型原型链有什么特点">4. 简述 Javascript 原型、原型链？有什么特点</h1>
+<p><strong>原型：</strong></p>
+<p>JavaScript 规定，每个函数都有一个 <code>prototype</code> 属性，指向一个对象。对于构造函数来说，生成实例的时候，该属性会自动称为实例对象的原型。这些实例会共享 <code>prototype</code> 中储存的属性和方法。</p>
+<p><strong>原型链：</strong></p>
+<p>所有的对象都有自己的原型对象（通过 <code>__proto__</code> 属性指向这个原型对象）任何一个对象都可以充当其他对象的原型，并且原型对象也是对象，也有自己的原型。这样就会形成一个原型链。</p>
+<p>最终都会指向 <code>Object.prototype</code> （ <code>Object.prototype.__proto__</code> 指向 <code>null</code>）</p>
+<h1 id="5-解释-javascript-中的作用域和变量声明提升">5. 解释 Javascript 中的作用域和变量声明提升</h1>
+<p><strong>作用域（scope）：</strong></p>
+<p>指的是变量存在的范围。在ES5中，JavaScript 有两种作用域：全局作用域，变量在整个程序中一直存在，所有地方都可以读取；函数作用域，变量只在函数内部存在。ES6 中新增了块级作用域</p>
+<p><strong>变量声明提升：</strong></p>
+<p>声明提升是将变量或者函数的<strong>声明</strong>提升到当前作用域的最顶端。</p>
+<h1 id="6-谈谈-this-对象的理解call-和-apply-的区别">6. 谈谈 this 对象的理解，call() 和 apply() 的区别</h1>
+<p><strong>this：</strong></p>
+<p>简单讲， <code>this</code> 就是属性或方法”当前“所在的对象。但 <code>this</code> 的指向是动态的，在不同的条件下 <code>this</code> 的指向也不同。</p>
+<ul>
+<li>在全局环境下， <code>this</code> 指向顶层对象 <code>window</code></li>
+<li>在构造函数中的 <code>this</code> 指向实例对象</li>
+<li>对象中的方法被调用时，方法里的 <code>this</code> 指向这个对象</li>
+</ul>
+<p><strong>call()/apply()：</strong></p>
+<p>作用：使用一个指定的<code>this</code>值和单独给出的一个或多个参数来调用一个函数</p>
+<p>区别：后面传的参数形式不同，<code>call()</code>在对象后面直接加参数， <code>apply()</code> 接收一个数组作为函数执行时的参数</p>
+<h1 id="7-javascript-的-typeof-返回有哪些数据类型">7. Javascript 的 typeof 返回有哪些数据类型</h1>
+<p>string , number , Boolean , undefined , object , function , symbol</p>
+<h1 id="8-什么是闭包为什么要使用它">8. 什么是闭包？为什么要使用它？</h1>
+<p><strong>闭包：</strong></p>
+<p>闭包就是能够读取其他函数内部变量的函数。闭包最大的特点就是它可以”记住“诞生的环境。本质上，闭包就是将函数内部和函数内部外部连接起来的一座桥梁</p>
+<p><strong>作用：</strong></p>
+<p>闭包最大的用处有两个，一个是可以读取函数内部的变量，另一个就是让这些变量始终保持在内存中，即闭包可以使得它诞生环境一直存在。</p>
+<p>另一个作用是，封装对象的私有属性和私有方法</p>
+<h1 id="9-new操作符到底干了什么">9. new操作符到底干了什么?</h1>
+<p>使用 <code>new</code> 命令时，它后面的函数一次执行下面的步骤</p>
+<ol>
+<li>创建一个空对象，作为将要返回的对象实例</li>
+<li>将这个空对象的原型，指向构造函数的 <code>prototype</code> 属性</li>
+<li>将这个空对象赋值给函数内部的 <code>this</code> 关键字</li>
+<li>开始执行构造函数内部的代码</li>
+<li>返回 <code>this</code> （默认情况下）</li>
+</ol>
+<h1 id="10-简述几种-es5-继承的方法">10. 简述几种 ES5 继承的方法</h1>
+<ol>
+<li>
+<p><strong>混入式继承</strong></p>
+<p>即浅层克隆/拷贝</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="k">for</span><span class="p">(</span><span class="nx">key</span> <span class="k">in</span> <span class="nx">obj1</span><span class="p">){</span>
+  <span class="nx">obj2</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">obj1</span><span class="p">[</span><span class="nx">key</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>原型式继承/共享原型</strong></p>
+<p>即两个构造函数共享一个原型</p>
+<p>问题：不能随意更改自己的原型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="nx">Father</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">lastName</span> <span class="o">=</span> <span class="s2">&#34;dend&#34;</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">Father</span> <span class="p">()</span> <span class="p">{}</span>
+<span class="kd">function</span> <span class="nx">Son</span> <span class="p">()</span> <span class="p">{}</span>
+<span class="nx">Son</span><span class="p">.</span><span class="nx">prorotype</span> <span class="o">=</span> <span class="nx">Father</span><span class="p">.</span><span class="nx">prorotype</span>
+<span class="kd">var</span> <span class="nx">son</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Son</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">father</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Father</span><span class="p">();</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>原型链继承</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="nx">Student</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>借用构造函数</strong></p>
+<p>利用<code>call</code>,<code>apply</code>所以不算标准的继承模式</p>
+<p>问题：不能继承借用构造函数的原型，每次构造函数都要多走一个函数，浪费效率</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">Student</span> <span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="nx">age</span><span class="p">,</span><span class="nx">sex</span><span class="p">,</span><span class="nx">score</span><span class="p">)</span> <span class="p">{</span>  
+  <span class="nx">Person</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span><span class="nx">name</span><span class="p">,</span><span class="nx">age</span><span class="p">,</span><span class="nx">sex</span><span class="p">)</span>  
+  <span class="k">this</span><span class="p">.</span><span class="nx">score</span> <span class="o">=</span> <span class="nx">score</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>组合继承</strong></p>
+<p>借用构造函数 + 原型链继承</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">Student</span> <span class="p">(</span><span class="nx">name</span><span class="p">,</span><span class="nx">age</span><span class="p">,</span><span class="nx">sex</span><span class="p">,</span><span class="nx">score</span><span class="p">)</span> <span class="p">{</span> 
+  <span class="nx">Person</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span><span class="nx">name</span><span class="p">,</span><span class="nx">age</span><span class="p">,</span><span class="nx">sex</span><span class="p">)</span>  
+  <span class="k">this</span><span class="p">.</span><span class="nx">score</span> <span class="o">=</span> <span class="nx">score</span>
+<span class="p">}</span>
+<span class="nx">Student</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong>圣杯模式</strong></p>
+<p>圣杯模式是在方法三的共有原型，但是在共有原型的基础上有改变</p>
+<p>另外价格构造函数<code>function F (){}</code>当做中间层，然后让<code>F</code>和<code>father</code>共有一个原型<code>F.prototype=father.prototype</code>，然后<code>son.prototype=new F();</code>使用原型链形成了继承关系，现在改<code>son.prototype</code>就不会影响<code>father.prototype</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">inherit</span> <span class="p">(</span><span class="nx">Target</span><span class="p">,</span> <span class="nx">Origin</span><span class="p">)</span> <span class="p">{</span>  
+  <span class="kd">function</span> <span class="nx">F</span> <span class="p">()</span> <span class="p">{};</span>  
+  <span class="nx">F</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">Origin</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>  
+  <span class="nx">Target</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">F</span><span class="p">();</span>  
+  <span class="nx">Target</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">constructor</span> <span class="o">=</span> <span class="nx">Target</span><span class="p">;</span><span class="c1">//让son的constructor指向Son  
+</span><span class="c1"></span>  <span class="nx">Target</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">uber</span> <span class="o">=</span> <span class="nx">Origin</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
+ <span class="c1">//我们希望我们构造出的对象，能找到自己的超类，超级父类（究竟继承自谁）应该   
+</span><span class="c1"></span>  <span class="c1">//起名为super但这个是保留字，我们就用uber
+</span><span class="c1"></span><span class="p">}</span>
+<span class="nx">Father</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">lastName</span> <span class="o">=</span> <span class="s2">&#34;deng&#34;</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">Father</span> <span class="p">()</span> <span class="p">{};</span>
+<span class="kd">function</span> <span class="nx">Son</span> <span class="p">()</span> <span class="p">{};</span>
+<span class="nx">inherit</span><span class="p">(</span><span class="nx">Son</span><span class="p">,</span> <span class="nx">Father</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">son</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Son</span><span class="p">();</span>
+<span class="kd">var</span> <span class="nx">father</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Father</span><span class="p">();</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h1 id="11-如何实现深拷贝">11. 如何实现深拷贝</h1>
+<p>常用的是， <code>JSON.parse(JSON.stringify(obj))</code></p>
+<p>缺点是会忽略 <code>undefined</code> , <code>symbol</code> , <code>function</code></p>
+<p>用 JS 的话：递归 + 判断类型</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="c1">// 数字 字符串 function是不需要拷贝的
+</span><span class="c1"></span><span class="kd">function</span> <span class="nx">deepClone</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>  
+    <span class="k">if</span> <span class="p">(</span><span class="nx">value</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="k">return</span> <span class="nx">value</span><span class="p">;</span>  
+    <span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">value</span> <span class="o">!==</span> <span class="s1">&#39;object&#39;</span><span class="p">)</span> <span class="k">return</span> <span class="nx">value</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">value</span> <span class="k">instanceof</span> <span class="nb">RegExp</span><span class="p">)</span> <span class="k">return</span> <span class="k">new</span> <span class="nb">RegExp</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>  
+    <span class="k">if</span> <span class="p">(</span><span class="nx">value</span> <span class="k">instanceof</span> <span class="nb">Date</span><span class="p">)</span> <span class="k">return</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>  
+    <span class="c1">// 我要判断 value 是对象还是数组 如果是对象 就产生对象 是数组就产生数组  
+</span><span class="c1"></span>    <span class="kd">let</span> <span class="nx">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">value</span><span class="p">.</span><span class="nx">constructor</span><span class="p">;</span>  
+    <span class="k">for</span><span class="p">(</span><span class="kd">let</span> <span class="nx">key</span> <span class="k">in</span> <span class="nx">value</span><span class="p">){</span>    
+        <span class="nx">obj</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">deepClone</span><span class="p">(</span><span class="nx">value</span><span class="p">[</span><span class="nx">key</span><span class="p">]);</span> <span class="c1">// 看一看当前的值是不是一个对象  
+</span><span class="c1"></span>    <span class="p">}</span>  
+    <span class="k">return</span> <span class="nx">obj</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="12-javascript-的垃圾回收机制讲一下">12. Javascript 的垃圾回收机制讲一下</h1>
+<p>Javascript 在创建变量（对象，字符串）时自动进行了分配内存，并且在不使用它们时”自动“释放。释放的过程称为垃圾回收。</p>
+<p>内存的声明周期：</p>
+<ol>
+<li>
+<p>分配你所需要的内存</p>
+<p>内存是由操作系统分配的，它允许您的程序使用它。在低级语言（如C语言）中，这是一个需要开发人员自己处理的显式执行的操作。然而，在高级语言中，系统会自动为你分配内存。</p>
+</li>
+<li>
+<p>使用分配到的内存（读、写）</p>
+<p>这时程序实际使用之前分配的内存，在代码中使用分配的变量时，就会发生读和写操作。</p>
+</li>
+<li>
+<p>不需要时将其释放/归还</p>
+<p>释放所有不再使用的内存，使之成为自由内存，并可以被重利用。与分配内存操作一样，这一操作在低级语言中也是需要显式地执行。</p>
+</li>
+</ol>
+<h1 id="13-常见的内存泄漏">13. 常见的内存泄漏</h1>
+<p>四种常见的内存泄漏：</p>
+<ol>
+<li>全局变量：不用 var 声明的变量，相当于挂载到 window 对象。如 <code>b=1</code> ，使用严格模式可以解决</li>
+<li>被遗忘的定时器和回调函数</li>
+<li>闭包</li>
+<li>没有清理的 DOM 元素引用</li>
+</ol>
+<h1 id="14-说说你对-promise-的理解">14. 说说你对 Promise 的理解</h1>
+<p>Promise 是异步编程的一种解决方案。</p>
+<p><code>Promise</code> 简单说就是一个容器，里面保存着某个未来才会结束的时间（通常是一个异步操作）的结果。从语法上说，Promise 是一个对象，从它可以获取异步操作的结果。Promise 提供同一的 API ，各种异步操作都可以用同样的方法进行处理</p>
+<p>Promise 对象有以下两个特点。</p>
+<ol>
+<li>对象的状态不受外界影响。Promise 对象代表一个异步操作，有三种状态： <code>pending</code> （进行中）， <code>fulfilled</code> （已成功）和 <code>rejected</code> （以失败）。</li>
+<li>一旦状态改变，就不会再边，任何时候都可以得到这个结果。</li>
+</ol>
+<h1 id="15-请介绍一下xmlhttprequest-对象">15. 请介绍一下XMLHttpRequest 对象</h1>
+<p><code>XMLHttpRequest</code> （XHR）对象用于与服务器交互。是一种异步请求的技术。通过 XMLHttpRequest 可以再不刷新页面的情况下请求特定 URL，获取数据。这允许网页再不影响用户操作的情况下，更新页面的局部内容。 <code>XMLHttpRequest</code> 在 AJAX 编程中被大量使用。</p>
+<h1 id="16-http-状态码及其含义">16. HTTP 状态码及其含义</h1>
+<p>1XX：信息状态码</p>
+<p>2XX：成功状态码</p>
+<p>3XX：重定向</p>
+<p>4XX：客户端错误</p>
+<p>5XX：服务器错误</p>
+<h1 id="17-请描述一下-cookies--sessionstorage-和-localstorage-的区别">17. 请描述一下 Cookies , sessionStorage 和 localStorage 的区别</h1>
+<p>cookie 是网站为了标识用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）</p>
+<p>cookie 数据始终在同源的 http 请求中携带（即使不需要），即会在浏览器和服务器间来回传递</p>
+<p>sessionStorage 和 localStorage 不会自动把数据发给服务器，仅在本地保存</p>
+<p>存储大小：</p>
+<ul>
+<li>cookie 数据大小不能超过4k</li>
+<li>sessionStorage 和 localStorage 可以达到5M或更大</li>
+</ul>
+<p>有效时间：</p>
+<ul>
+<li>localStorage 储存持久数据，浏览器关闭后数据不丢失除非主动删除数据</li>
+<li>sessionStorage 数据在当前浏览器窗口关闭后自动删除</li>
+<li>cookie 设置的 cookie 过期时间之前一直有效，即使窗口或浏览器关闭</li>
+</ul>
+<h1 id="18-简述同源策略与跨域">18. 简述同源策略与跨域</h1>
+<p>同源策略是一个重要的安全策略，它用于限制一个 origin 的文档或者它加载的脚本如何能与另一个源的资源进行交互。他能帮助阻隔恶意文档，减少可能被攻击的媒介</p>
+<p>当协议，主机，端口号有一个不同时，就是跨域</p>
+<h1 id="19-跨域解决方案">19. 跨域解决方案</h1>
+<ol>
+<li>（后端）服务器配置 CORS （跨域资源共享）</li>
+<li>（后端）node.js 或 nginx 反向代理，把跨域改造成同域</li>
+<li>（前端）将 JSON 升级成 JSONP，在 JSON 的基础上，利用 <code>&lt;scripta&gt;</code> 标签可以跨域的特想，加上头设置</li>
+</ol>
+<h1 id="20-从浏览器地址栏输入-url-到显示页面的步骤">20. 从浏览器地址栏输入 URL 到显示页面的步骤</h1>
+<ol>
+<li>浏览器根据请求的 URL 交给 DNS 域名解析，找到真实 IP ，向服务器发起请求</li>
+<li>服务器交给后台处理完成后返回数据，浏览器接收文件（html , js , css , 图像等）</li>
+<li>浏览器对加载到的资源（html , js , css 等）机型你语法解析，建立相应的内部数据结构</li>
+<li>载入解析到的资源文件，渲染页面，完成</li>
+</ol>
+<h1 id="21-javascript-中的作用域scope是指什么">21. Javascript 中的作用域（scope）是指什么？</h1>
+<p>在 Javascript 中，每个函数都有自己的作用域。作用域基本上是变量以及如何通过名称访问这些变量的规则的集合。只有函数的代码才能访问函数作用域内的变量</p>
+<p>同一个作用域中的变量名必须是唯一的。一个作用域可以嵌套在另一个作用域内。如果一个作用域嵌套在另一个作用域内，最内部作用域的代码可以访问另一个作用域的变量</p>
+<h1 id="22-解释-javascript-中的-null-和-undefined">22. 解释 Javascript 中的 null 和 undefined</h1>
+<p>JavaScript 中有两种底层类型：null 和undefined。它们代表了不同的含义：</p>
+<ul>
+<li>尚未初始化的东西： <code>undefined</code></li>
+<li>目前不可用的东西： <code>null</code></li>
+<li>typeof 也不一样</li>
+</ul>
+<h1 id="23-解释事件冒泡以及如何阻止它">23. 解释事件冒泡以及如何阻止它？</h1>
+<p>事件冒泡是指嵌套最深的元素触发一个事件，然后这个事件顺着嵌套顺序依次在父元素上触发</p>
+<p>防止事件冒泡的一种方法是使用 <code>event.cancelBubble</code> 或 <code>event.stopPropagation()</code></p>
+<h1 id="24-什么是防抖和节流有什么区别如何实现">24. 什么是防抖和节流？有什么区别?如何实现？</h1>
+<p>防抖：</p>
+<p>触发高频事件后 n 秒内函数只会执行一次，如果 n 秒内高频事件再次被触发，则重新计算时间</p>
+<p>应用场景：</p>
+<ol>
+<li>搜索框输入查询，如果用户一直在输入中，没有必要不停的调用去请求服务端接口，等用户停止输入的时候，再调用，设置一个合适的时间间隔，有效减轻服务端压力</li>
+<li>表单验证</li>
+<li>按钮提交事件</li>
+<li>浏览器窗口缩放，resize 事件（如窗口停止改变大小之后重新计算布局）等</li>
+</ol>
+<p>思路：</p>
+<p>每次触发事件时都取消之前的延时调用方法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">debounce</span><span class="p">(</span><span class="nx">fn</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">timeout</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span> <span class="c1">// 创建一个标记用来存放定时器的返回值
+</span><span class="c1"></span>  <span class="k">return</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">clearTimeout</span><span class="p">(</span><span class="nx">timeout</span><span class="p">);</span> <span class="c1">// 每当用户输入的时候把前一个 setTimeout clear 掉
+</span><span class="c1"></span>    <span class="nx">timeout</span> <span class="o">=</span> <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span> 
+      <span class="c1">// 然后又创建一个新的 setTimeout
+</span><span class="c1"></span>      <span class="c1">// 这样就能保证输入字符后的 interval 间隔内如果还有字符输入的话，就不会执行 fn 函数
+</span><span class="c1"></span>      <span class="nx">fn</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">);</span><span class="c1">//这里的this 指向 inp
+</span><span class="c1"></span>    <span class="p">},</span> <span class="mi">500</span><span class="p">);</span>
+  <span class="p">};</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">sayHi</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;防抖成功&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">var</span> <span class="nx">inp</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">&#39;inp&#39;</span><span class="p">);</span>
+<span class="nx">inp</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;input&#39;</span><span class="p">,</span> <span class="nx">debounce</span><span class="p">(</span><span class="nx">sayHi</span><span class="p">));</span> <span class="c1">// 防抖
+</span></code></pre></td></tr></table>
+</div>
+</div><p>节流：</p>
+<p>高频事件触发，但在 n 秒内只会执行一次，所以节流会稀释函数的执行频率</p>
+<p>使用场景：</p>
+<ol>
+<li>按钮点击事件</li>
+<li>拖拽事件</li>
+<li>onScroll</li>
+<li>计算鼠标移动的距离</li>
+</ol>
+<p>思路 :</p>
+<p>每次触发事件时都判断当前是否有等待执行的延时函数</p>
+<p>代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-jsx" data-lang="jsx"><span class="kd">function</span> <span class="nx">throttle</span><span class="p">(</span><span class="nx">fn</span><span class="p">)</span> <span class="p">{</span>
+  <span class="kd">let</span> <span class="nx">canRun</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span> <span class="c1">// 通过闭包保存一个标记
+</span><span class="c1"></span>  <span class="k">return</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">canRun</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span> <span class="c1">// 在函数开头判断标记是否为 true，不为 true 则 return
+</span><span class="c1"></span>    <span class="nx">canRun</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span> <span class="c1">// 立即设置为 false
+</span><span class="c1"></span>    <span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span> <span class="c1">// 将外部传入的函数的执行放在 setTimeout 中
+</span><span class="c1"></span>      <span class="nx">fn</span><span class="p">.</span><span class="nx">apply</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">arguments</span><span class="p">);</span>
+      <span class="c1">// 最后在 setTimeout 执行完毕后再把标记设置为 true(关键) 表示可以执行下一次循环了
+</span><span class="c1"></span>      <span class="c1">// 当定时器没有执行的时候标记永远是 false，在开头被 return 掉
+</span><span class="c1"></span>      <span class="nx">canRun</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">},</span> <span class="mi">500</span><span class="p">);</span>
+  <span class="p">};</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">sayHi</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">innerWidth</span><span class="p">,</span> <span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">innerHeight</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;resize&#39;</span><span class="p">,</span> <span class="nx">throttle</span><span class="p">(</span><span class="nx">sayHi</span><span class="p">));</span>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="25-jsonp-的原理是什么">25. JSONP 的原理是什么？</h1>
+<p>尽管浏览器有同源策略，但是 <code>&lt;script&gt;</code> 标签的 <code>src</code> 属性不会被同源策略所约束，可以获取任意服务器上的脚本并执行。 jsonp 通过插入 <code>&lt;script&gt;</code> 标签的方式来实现跨域，参数只能通过 url 传入，且仅支持 get 请求</p>
+<p>步骤：</p>
+<ol>
+<li>创建 callback 方法</li>
+<li>插入 script 标签</li>
+<li>后台接收到请求，解析前端传过去的 callback 方法，返回该方法的调用，并且数据作为参数传入该方法</li>
+<li>前端执行服务端返回的方法调用</li>
+</ol>
+<h1 id="26-异步加载-js-的方式有那些">26. 异步加载 JS 的方式有那些？</h1>
+<ol>
+<li>
+<p>defer 属性</p>
+</li>
+<li>
+<p>async 属性</p>
+</li>
+<li>
+<p>defer 和 async 的区别</p>
+<p>defer与async的区别是：defer要等到整个页面在内存中正常渲染结束（DOM 结构完全生成，以及其他脚本执行完成），才会执行；async一旦下载完，渲染引擎就会中断渲染，执行这个脚本以后，再继续渲染。一句话，defer是“渲染完再执行”，async是“下载完就执行”。另外，如果有多个defer脚本，会按照它们在页面出现的顺序加载，而多个async脚本是不能保证加载顺序的。</p>
+</li>
+<li>
+<p>动态创建 script 标签</p>
+</li>
+</ol>
+<h1 id="27-常见-web-安全及防护原理">27. 常见 web 安全及防护原理</h1>
+<ol>
+<li>
+<p>XSS 原理及防范</p>
+<p>XSS（cross-site scripting）攻击指的是攻击者往 web 页面里插入恶意 html 标签或者 Javascript 代码。比如：攻击者再论坛中放一个看似安全的链接，骗取用户点击后，窃取 cookie 中的用户私密信息；或者攻击者在论坛中加一个恶意表单，当用户提交表单的时候，却把信息传送到攻击者的服务器中，而不是用户原本以为的信任站点</p>
+</li>
+<li>
+<p>XSS防范方法</p>
+<p>首先代码里对用户输入的地方和变量都需要自习检查长度和对 <code>&lt;</code> , <code>&gt;</code> , <code>;</code> , <code>'</code> 等字符做过滤；其次任何内容写道页面之前都必须加以 encode ，避免不小心把 <code>html</code> <code>tag</code> 弄出来。这一个层面做好，至少可以堵住超过一半的 XSS 攻击</p>
+</li>
+<li>
+<p>CSRF</p>
+<p>即跨站请求伪造，攻击者通过一些技术手段欺骗用户的浏览器去访问一个自己曾经认证过的网站并进行一些操作（如发邮件，发消息，甚至财产操作如转账和购买商品）。由于浏览器曾经认证过，所以被访问的网站会认为是真正的用户操作而去运行。这里用了web中用户身份验证的一个漏洞：简单的身份验证只能保证请求发自某个用户的浏览器，却不能保证请求本身是用户自愿发出的</p>
+</li>
+<li>
+<p>XSS 与 CSRF 有什么区别么？</p>
+<ul>
+<li>XSS 是获取信息，不需要提前知道其他用户页面的代码和数据包。CSRF 是代替用户完成指定的动作，需要知道其他用户页面的代码和数据包。要完成一次 CSRF 攻击，受害者必须依次完成两个步骤</li>
+<li>登录受信任网站 A ，并在本地生成 Cookie</li>
+<li>再不登出 A 的情况下，访问危险网站 B</li>
+</ul>
+</li>
+<li>
+<p>CSRF 的防御</p>
+<ul>
+<li>服务端的 CSRF 防御方法和多样，但总的思想都是一致的，就是在客户端页面增加伪随机数</li>
+<li>通过验证码的方法</li>
+</ul>
+</li>
+</ol>
+<h1 id="28-谈谈你对-amdcmd-的理解">28. 谈谈你对 AMD、CMD 的理解</h1>
+<p>AMD 是 RequireJS 在推广过程中对模块定义的规范化产出</p>
+<p>CMD 是 SeaJS 在推广过程中对模块定义的规范化产出</p>
+<p>它们都是为了达成 浏览器端模块化开发的目的</p>
+<p>区别：</p>
+<ol>
+<li>对于依赖的模块，AMD 是提前执行，CMD 是延迟执行。</li>
+<li>CMD 推崇依赖就近，AMD 推崇依赖前置</li>
+<li>AMD 的 API 默认是一个当多个用，CMD 的 API 严格区分，推崇指责单一</li>
+</ol>
+<h1 id="29-那些操作会造成内存泄漏">29. 那些操作会造成内存泄漏</h1>
+<p>内存泄漏指任何对象在您不再拥有或需要它之后仍然存在</p>
+<ol>
+<li>setTimeout 的第一个参数使用字符串而非函数的化，会引发内存泄漏</li>
+<li>闭包</li>
+<li>控制台日志</li>
+<li>循环，即两个对象彼此引用彼此且彼此保留时，就会产生一个循环</li>
+</ol>
+<h1 id="30-事件传播的三个阶段是什么">30. 事件传播的三个阶段是什么？</h1>
+<p>捕获 &gt; 目标 &gt; 冒泡</p>
+<p>在捕获阶段，事件通过父元素向下传递到目标元素。然后它到达目标元素，冒泡开始</p>
+<h1 id="31-同步和异步的区别">31. 同步和异步的区别?</h1>
+<ul>
+<li>
+<p>同步：</p>
+<p>浏览器访问服务器请求，用户看得到页面刷新，重新发送请求完，页面刷新，新内容出现，用户看到新内容，进行下一步操作</p>
+</li>
+<li>
+<p>异步：</p>
+<p>浏览器访问服务器请求，用户正常操作，浏览器后端进行请求。等请求完，页面不刷新，新内容也会出现，用户看到新内容</p>
+</li>
+</ul>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">MoYuM</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2020-08-14
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/vue-basic-reactivity/">
+            <span class="next-text nav-default">基础响应式原理</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/MoYuM" class="iconfont icon-github" title="github"></a>
+      <a href="https://space.bilibili.com/3199033" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">MoYuM</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.d7b7ada643c9c1a983026e177f141f7363b4640d619caf01d8831a6718cd44ea.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-173060836-1', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -10,28 +10,35 @@
   
   <url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2020-07-19T17:06:18+08:00</lastmod>
+    <lastmod>2020-08-14T17:11:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2020-07-19T17:06:18+08:00</lastmod>
+    <lastmod>2020-08-14T17:11:01+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/js%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
+    <lastmod>2020-08-14T17:11:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2020-07-19T17:06:18+08:00</lastmod>
+    <lastmod>2020-08-14T17:11:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://localhost:1313/categories/%E5%89%8D%E7%AB%AF/</loc>
-    <lastmod>2020-07-19T17:06:18+08:00</lastmod>
+    <lastmod>2020-08-14T17:11:01+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

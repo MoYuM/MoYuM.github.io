@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 19 Jul 2020 17:06:18 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 14 Aug 2020 17:11:01 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>JS面试题</title>
+      <link>http://localhost:1313/post/js%E9%9D%A2%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Fri, 14 Aug 2020 17:11:01 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/js%E9%9D%A2%E8%AF%95%E9%A2%98/</guid>
+      <description>JavaScript 1. 什么是“use strict” ，好处和坏处 “use strict”：严格模式，是一种在 JavaScript 代码运行时自动实行更严格解析和错误处理的方法 优点： 消</description>
+    </item>
     
     <item>
       <title>基础响应式原理</title>
