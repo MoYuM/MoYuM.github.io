@@ -1,20 +1,17 @@
 import React from "react";
-import articles from "../../articles";
-import { Article } from "../../interface";
 import { Link } from "react-router-dom";
-const list: Array<Article> = Object.keys(articles).map((i) => ({
-  title: i,
-  content: articles[i],
-}));
-
-console.log(list);
+import { useArticleList } from "../../utils";
 
 const ArticleList: React.FC = () => {
+  const list = useArticleList();
+
   return (
     <>
       <div>文章列表</div>
-      {list.map((i) => (
-        <Link to={`/articles/${i.title}`}>{i.title}</Link>
+      {list.map((i, index) => (
+        <Link key={index} to={`/articles/${i.title}`}>
+          {i.title}
+        </Link>
       ))}
     </>
   );

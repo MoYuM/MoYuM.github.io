@@ -1,5 +1,7 @@
 import test from './test.md?raw';
 
-export default {
+const articleList: Record<string, string> = {
   test,
 }
+
+export default articleList
