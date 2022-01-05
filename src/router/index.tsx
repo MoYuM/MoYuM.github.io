@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ArticleList from "../pages/articleList";
 import ReactMarkdown from "react-markdown";
+import Home from "../pages/home";
 import { useArticleList } from "../utils";
 
 const MyRouter: React.FC = () => {
@@ -9,7 +10,8 @@ const MyRouter: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/articles" element={<ArticleList />} />
+        <Route path="/" element={<Home />} />
+        <Route path="articles" element={<ArticleList />} />
         {titleList.map((i, index) => (
           <Route
             key={index}
