@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ArticleList from "../pages/articleList";
-import ReactMarkdown from "react-markdown";
 import Home from "../pages/home";
+import ArticlePage from "../pages/articlePage";
 import { useArticleList } from "../utils";
 
 const MyRouter: React.FC = () => {
@@ -12,13 +12,15 @@ const MyRouter: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="articles" element={<ArticleList />} />
-        {titleList.map((i, index) => (
-          <Route
-            key={index}
-            path={`/articles/${i.title}`}
-            element={<ReactMarkdown>{i.content}</ReactMarkdown>}
-          />
-        ))}
+        {titleList.map((i, index) => {
+          return (
+            <Route
+              key={index}
+              path={`/articles/${i.title}`}
+              element={<ArticlePage>{i.content}</ArticlePage>}
+            />
+          );
+        })}
       </Routes>
     </BrowserRouter>
   );

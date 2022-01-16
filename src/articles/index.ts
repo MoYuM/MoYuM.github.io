@@ -1,7 +1,7 @@
-import test from './test.md?raw';
+import gameOver from './gameover.md?raw';
 
 const articleList: Record<string, string> = {
-  test,
+  gameOver,
 }
 
 export default articleList

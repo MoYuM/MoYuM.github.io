@@ -1,13 +1,17 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import mySelf from "@/articles/mySelf.md?raw";
+import Article from "../../../../components/Article";
 
 const Main: React.FC = () => {
   return (
     <div className="container mx-auto mt-10 mb-10">
-      <article className="prose">
+      <Article>
         <ReactMarkdown>{mySelf}</ReactMarkdown>
-      </article>
+        <a href="./articles">
+          <h1>文章</h1>
+        </a>
+      </Article>
     </div>
   );
 };
